@@ -19,7 +19,8 @@ p{
 }
 footer{
 }
-
+section{width: 100%;
+}
 #backToTopBar{
 	width: 100%;
 	opacity: 0.5;
@@ -101,7 +102,6 @@ footer{
 #summary-section{
 	margin-top: 10%;
 	margin-left: 3%;
-	width: 400px;
 }
 #summary-page{
 	text-align: left;
@@ -128,7 +128,6 @@ footer{
 	display: inline;
 	margin-top: 10%;
 	margin-left: 20%;
-	width: 400px;
 }
 
 #paradigmshift-slide h1{
@@ -139,14 +138,12 @@ footer{
 
 #majoradvan-slide{
 	margin-top: 10%;
-	width: 500px;
 	width: 100%;
 	display: inline-block;
 	margin-left: 4%;
 }
 #majoradvan-slide #mslide-div{
 	position: absolute;
-	width: 500px;
 	float: right;
 }
 #majoradvan-slide h1{
@@ -162,7 +159,6 @@ footer{
 
 
 #massmarket-slide{
-	width: 500px;
 	margin-left: 5%;
 }
 #massmarket-slide h1{
@@ -172,7 +168,6 @@ footer{
 
 
 #grocery-slide{
-	width: 500px;
 	margin-left: 5%;
 }
 #grocery-slide h1{
@@ -182,7 +177,6 @@ footer{
 
 
 #finish-slide{
-	width: 500px;
 	margin-left: 5%;
 }
 #finish-slide h1{
@@ -190,7 +184,3 @@ footer{
 }
 
 
-.ContentFlow{
-	height: 500px;
-	width: 1000px;
-}
