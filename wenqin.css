@@ -20,7 +20,12 @@ footer{
 }
 
 #backToTopBar{
+	width: 100%;
+	opacity: 0.5;
+	background-color: gray;
+	height: 5%;
 	position: fixed;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #intro-title{

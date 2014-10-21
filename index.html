@@ -11,7 +11,7 @@
 
 	<body>
 		<div id="backToTopBar">
-			<button>Back To Top</button>
+			<button>Beginning</button>
 		</div>
 		<div id="main">
 			<section class="intro">
@@ -21,7 +21,7 @@
 				<div id="introvid-div">
 				<video id="intro-video" autoplay>
 						<source src="boom-video.mp4" type="video/mp4">
-						Whoops, your browser does not support video. Oh well, not awesome video for you. 
+						Whoops, your browser does not support video. Contacting the military to ressurect your situation.
 				</video>
 				</div>
 
@@ -129,6 +129,9 @@
 				$('#main').moveTo(1);
 			});
 
+			$("#backToTopBar").on('click', function(){
+				$('#main').moveTo(1);
+			});
 			//initial fadein on start load
 			$('#introvid-div').hide().delay(300).fadeIn(1000);
 			/*
