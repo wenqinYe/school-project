@@ -15,6 +15,7 @@ h1{
 	font-weight: 300;
 }
 p{
+	font-size: 1em;
 }
 footer{
 }
@@ -22,16 +23,23 @@ footer{
 #backToTopBar{
 	width: 100%;
 	opacity: 0.5;
-	background-color: gray;
+	background-color: #E0E0E0 ;
 	height: 5%;
 	position: fixed;
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 
+}
+
+#backToTopBar button{
+	border: 0;
+	background: none;
+	height: 50px;
 }
 
 #intro-title{
 	position: relative;
 	width: 800px;
-	font-size: 60;
+	font-size: 4em;
 	
 }
 .intro{
@@ -100,7 +108,7 @@ footer{
 }
 #summary-page h1{
 	text-align: left;
-	font-size: 50;
+	font-size: 4em;
 }
 
 
@@ -111,7 +119,7 @@ footer{
 }
 
 #wages-slide h1{
-	font-size: 50;
+	font-size:4em;
 }
 
 
@@ -124,15 +132,17 @@ footer{
 }
 
 #paradigmshift-slide h1{
-	font-size: 50;
+	font-size: 4em;
 }
 
 
 
 #majoradvan-slide{
+	margin-top: 10%;
 	width: 500px;
 	width: 100%;
 	display: inline-block;
+	margin-left: 4%;
 }
 #majoradvan-slide #mslide-div{
 	position: absolute;
@@ -140,7 +150,7 @@ footer{
 	float: right;
 }
 #majoradvan-slide h1{
-	font-size: 50;
+	font-size: 4em;
 }
 
 #ContentFlow{
@@ -156,7 +166,7 @@ footer{
 	margin-left: 5%;
 }
 #massmarket-slide h1{
-	font-size: 50;
+	font-size: 4em;
 }
 
 
@@ -166,7 +176,7 @@ footer{
 	margin-left: 5%;
 }
 #grocery-slide h1{
-	font-size: 50;
+	font-size: 4em;
 }
 
 
@@ -176,7 +186,7 @@ footer{
 	margin-left: 5%;
 }
 #finish-slide h1{
-	font-size: 50;
+	font-size: 4em;
 }
 
 
