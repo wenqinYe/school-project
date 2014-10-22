@@ -4,7 +4,12 @@ body {
 	overflow: hidden;
 	/*font-family: 'Open Sans', helvetica, sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
-	color: #202020;
+	color:#404040  ;
+}
+
+.onepage-pagination{
+	visibility: hidden;
+	background-color: red;
 }
 
 body #main{
@@ -13,7 +18,7 @@ body #main{
 
 h1{
 	font-weight: 300;
-	font-size: 4em;
+	font-size: 3em;
 }
 p{
 	font-size: .9em;
@@ -112,12 +117,21 @@ section{width: 100%;
 }
 .info-box{
 	position: absolute;
-	width: 45%;
+	max-width: 45%;
 	margin-left: 45%;
+	max-height: 50%;
 }
 
 .exhibit{
 	width: 35%;
 margin-left: 3%;
-margin-top: 10%;
+margin-top: 5%;
+}
+
+.exhibit #boy{
+	margin-bottom: 10%;
+}
+
+#end{
+	margin-left: 3%;
 }

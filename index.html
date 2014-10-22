@@ -17,7 +17,7 @@
 				</div>
 				<div id="introvid-div">
 				<video id="intro-video" autoplay>
-						<source src="boom-video.mp4" type="video/mp4">
+						<source src="boom-video.mp4" type="video/mp4" >
 						Whoops, your browser does not support video. Contacting the military to ressurect your situation.
 				</video>
 				</div>
@@ -41,7 +41,9 @@
 				 <p>The video was taken by the Canadian Film Board. The date that the film was taken is not clear as it was part of a documentary that occurs 30 years later. Though, the reason it was created was for use in creating educational documentaries that would depict life at the time for future generations to see. The people in the film having fun reflects the culture of consumerism in the twenties where people went from doing things for necessity to doing things for pleasure. </p>
 				 <p>This film is reliable because it created by a government agency whose sole purpose is to document and create films about Canada for future Canadians to see. Thus, it is unlikely that the scenes are fake or not of the time period. Though the depiction of the film may be questionable as the agency that shot the film is part of the Government of Canada and may therefore be taken in a way that boosts Canada’s image, and may not necessarily reflect the actual feelings of the time period. </p>
 				 </div>
-				 <video class="exhibit" src="boom-video.mp4"/>
+				 <video class="exhibit" controls loop autoplay>
+				 	<source src="boom-video.mp4" type="video/mp4" />
+				 <video/>
 				 <div class="translation">
 				 <p class="dummies-translation">Gangsta Translation:</p><p class="explain">Tha film was one reliable source brah. It was by da film board dat made a bunch of films dat showed people crunk'n. Yah feel me? </p>
 				 </div>
@@ -56,7 +58,7 @@ In the ad there are no discussions about the features of the car or how it works
 </p>
 				<p>This source is reliable because it comes from the Henry Ford museum, which is a well known museum dedicated to providing historical information on Ford cars in the early 20th century. The audience for the car were for adults who might want to buy their sons a car. The information in the poster is likely to be exaggerated as its main purpose was to convince consumers to buy a Ford car. Thus, one should not take the information in the poster as facts, but should instead look at the overview of the film </p>
 				</div>
-				<img class="exhibit" src="boy.jpg"/>
+				<img class="exhibit" id="boy" src="boy.jpg"/>
 				<div class="translation">
 				<p class="dummies-translation">Trying-to Hard Student</p> <p class="explain">This publication proclaims that the 10 millionth Model T hath been depleted from the Ford manufactory, and potatoes the propensity of the proletariat in the course of the antecedent century. Thus, making it a source for the inquisitive onion.</p>
 				</div>
@@ -77,9 +79,20 @@ Canada’s auto industry  grew very rapidly as a result of the boom in consumeri
 	</div>
 			</section>
 
-			<section id="bibliography"> 
-				<h1>Boring...</h1>
-
+			<section> 
+				<div id="end">
+					<h1>You Are At The End!</h1>
+				</div>
+				<div id="bibliography">
+					<p>"Model T Advertising." <i>Model T Advertising</i>. The Henry Ford, n.d. Web. 20 Oct. 2014. </p>
+					<p>"Game Changer: Ford Celebrates 100 Years of the Moving Assembly Line." Ford Motor Company, n.d. Web. 21 Oct. 
+2014.</p>
+					<p>Whipps, Heather. "Roaring Twenties."<i> LiveScience</i>. TechMedia Network, 25 Aug. 2008. Web. 19 Oct. 2014.</p>
+					<p>
+Blackford, and Kerr. "The Rise of Marketing." <i>The Rise of Marketing</i>. Arkansas Tech University, n.d. Web. 21 Oct. 2014.</p>
+					<p>"Sunshine and Eclipse (1927-1934)." National Film Board of Canada, n.d. Web. 21 Oct. 2014.</p>
+					<p>Newman GArfield et al., <i>Canada A Nation Unfolding</i>. Toronto: McGraw-Hill Ryerson Limited, 2000. Print. </p>
+				</div>
 			</section>
 
 
@@ -90,6 +103,7 @@ Canada’s auto industry  grew very rapidly as a result of the boom in consumeri
 			$('#main').onepage_scroll({
 				loop: false, 
 				pagination: true, 
+				easing: "ease",
 
 				beforeMove: function(index){
 					switch(index){
@@ -97,13 +111,14 @@ Canada’s auto industry  grew very rapidly as a result of the boom in consumeri
 							$('#intro-div').hide();
 							break;
 					}
+					//$('h1').hide();
+					$('p').hide();
 
 				},
 
 				afterMove: function(index){
 					switch(index){
 						case 1:
-							$('#introvid-div').hide().delay(300).fadeIn(1000);
 							$('#intro-div').hide();
 							document.getElementById('intro-video').play();
 							$('#intro-video').on('ended', function(){
@@ -112,6 +127,8 @@ Canada’s auto industry  grew very rapidly as a result of the boom in consumeri
 							})
 							break;
 					}
+					$('h1').fadeIn(500);
+					$('p').fadeIn(500);
 				}
 
 			});
@@ -126,8 +143,6 @@ Canada’s auto industry  grew very rapidly as a result of the boom in consumeri
 			$("#backToTopBar").on('click', function(){
 				$('#main').moveTo(1);
 			});
-			//initial fadein on start load
-			$('#introvid-div').hide().delay(300).fadeIn(1000);
 			/*
 				When the video is finished playing fade in the text and move to the 
 				second slide
