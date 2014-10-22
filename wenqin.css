@@ -1,10 +1,10 @@
 body {
-	background-color: #202020;
+	background-color: white;
 	margin: 0 auto;
 	overflow: hidden;
 	/*font-family: 'Open Sans', helvetica, sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
-	color: white;
+	color: #202020;
 }
 
 body #main{
@@ -13,9 +13,10 @@ body #main{
 
 h1{
 	font-weight: 300;
+	font-size: 4em;
 }
 p{
-	font-size: 1em;
+	font-size: .9em;
 }
 footer{
 }
@@ -39,7 +40,6 @@ section{width: 100%;
 
 #intro-title{
 	position: relative;
-	width: 800px;
 	font-size: 4em;
 	
 }
@@ -55,7 +55,6 @@ section{width: 100%;
 	margin-left: 30%;
 	position: absolute;
 	color: white;
-	width: 800px;
 	vertical-align: center;
 	z-index: 10;
 }
@@ -75,105 +74,6 @@ section{width: 100%;
 	color: red;
 }
 
-/**************** Differently Similar **********************/
-#diff-section h1{
-	font-size: 50;
-	display: inline;
-}
-#diff-section #different-text{
-	font-family: 'Old Standard TT', serif;
-	font-weight: 400;
-		margin-right: 0.5em;
-}
-#diff-section div{
-	margin-top: 10%;
-	margin-left: 30%;
-	text-align: left;
-	margin-right: 3%;
-}
-
-/* Alternate colours between each div */
-#special{
-	height: 100%;
-	background-color: white;
-}
-
-/********* All play and no work *********/
-#summary-section{
-	margin-top: 10%;
-	margin-left: 3%;
-}
-#summary-page{
-	text-align: left;
-}
-#summary-page h1{
-	text-align: left;
-	font-size: 4em;
-}
-
-
-
-#wages-slide{
-	width: 400px;
-	margin-left: 3%;
-}
-
-#wages-slide h1{
-	font-size:4em;
-}
-
-
-
-#paradigmshift-slide{
-	display: inline;
-	margin-top: 10%;
-	margin-left: 20%;
-}
-
-#paradigmshift-slide h1{
-	font-size: 4em;
-}
-
-
-
-#majoradvan-slide{
-	margin-top: 10%;
-	width: 100%;
-	display: inline-block;
-	margin-left: 4%;
-}
-#majoradvan-slide #mslide-div{
-	position: absolute;
-	float: right;
-}
-#majoradvan-slide h1{
-	font-size: 4em;
-}
-
-#ContentFlow{
-	position: absolute;
-	margin-top: -20%;
-	margin-left: -20%;
-}
-
-
-
-#massmarket-slide{
-	margin-left: 5%;
-}
-#massmarket-slide h1{
-	font-size: 4em;
-}
-
-
-
-#grocery-slide{
-	margin-left: 5%;
-}
-#grocery-slide h1{
-	font-size: 4em;
-}
-
 
 
 #finish-slide{
@@ -183,4 +83,41 @@ section{width: 100%;
 	font-size: 4em;
 }
 
+#bibliography h1{
+	font-size: 3em;
+}
 
+/*** Dummies **/
+.translation{
+	margin-top: 5%;
+	font-size: .8em;
+}
+.dummies-translation{
+	background-color: #DAA520;
+	display: inline-block;
+	height: 3%;
+	border-radius: 4px;
+	color: white;
+	margin-right: 1%;
+	margin-left: 3%;
+}
+
+.explain{
+	display: inline-block;
+}
+
+.translation{
+	width: 35%;
+	margin-left: 3%;
+}
+.info-box{
+	position: absolute;
+	width: 45%;
+	margin-left: 45%;
+}
+
+.exhibit{
+	width: 35%;
+margin-left: 3%;
+margin-top: 10%;
+}
