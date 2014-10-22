@@ -99,7 +99,11 @@ Blackford, and Kerr. "The Rise of Marketing." <i>The Rise of Marketing</i>. Arka
 		</div>
 
 	<script language="javascript" type="text/javascript">if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-}else{
+		var counter = 1;
+		$('section').each(function(){
+			$(this).css("height", counter * 100 + "%" , "width", counter * 100 + "%");
+		});
+	}else{
 		$(document).ready(function(){
 			$('#main').onepage_scroll({
 				loop: false, 
